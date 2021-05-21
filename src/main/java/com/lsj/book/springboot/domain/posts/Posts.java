@@ -1,5 +1,6 @@
 package com.lsj.book.springboot.domain.posts;
 
+import com.lsj.book.springboot.domain.BaseTimeEntity;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -13,7 +14,7 @@ import javax.persistence.Id;
 @Getter
 @NoArgsConstructor  //기본 생성자 자동 추가
 @Entity //테이블과 링크될 클래스임을 나타냄. 파스칼 표기법을 스네이크 표기법으로 매칭
-public class Posts {
+public class Posts extends BaseTimeEntity {
 
     @Id //해당 테이블의 PK 필드
     @GeneratedValue(strategy = GenerationType.IDENTITY) //PK 생성 규칙. 스프링 부트 2.0버전에선 GenerationType.IDENTITY 옵션을 추가 해야만 auto_increment가 됨

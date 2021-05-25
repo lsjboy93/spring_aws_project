@@ -45,7 +45,7 @@
         {{#posts}}  <!--posts라는 List를 순회(== for)-->
             <tr>
                 <td>{{id}}</td> <!--리스트에서  뽑아낸 객체 필드 사용-->
-                <td>{{title}}</td>
+                <td><a href="/posts/update/{{id}}">{{title}}</a></td>
                 <td>{{author}}</td>
                 <td>{{modifiedDate}}</td>
             </tr>

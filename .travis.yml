@@ -20,7 +20,7 @@ before_install:
 before_deploy:
   - zip -r spring_aws_project *
   - mkdir -p deploy
-  - mv spring_aws_projecct.zip deploy/spring_aws_project.zip
+  - mv spring_aws_project.zip deploy/spring_aws_project.zip
 
 deploy:
   - provider: s3

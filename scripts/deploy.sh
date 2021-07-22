@@ -21,9 +21,9 @@ else
   sleep 5
 fi
 
-echo ">8080 포트 강제 종료"
+#echo ">8080 포트 강제 종료"
 
-SHUT_PORT=$(netstat -tnlp | grep 8080 | tr -s ' ' ' ' | cut -d ' ' -f7 | cut -d '/' -f1)
+#SHUT_PORT=$(netstat -tnlp | grep 8080 | tr -s ' ' ' ' | cut -d ' ' -f7 | cut -d '/' -f1)
 
 if [ -z "SHUT_PORT" ]; then
 	kill -9 $SHUT_PORT
